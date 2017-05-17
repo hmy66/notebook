@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */; };
+		1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804A0001ECBEC030059A7B5 /* EraserBrush.swift */; };
+		1804A0031ECBF7700059A7B5 /* pictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804A0021ECBF7700059A7B5 /* pictureViewController.swift */; };
 		18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A31EC9D83F00F9FC9A /* createViewController.swift */; };
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilBrush.swift; sourceTree = "<group>"; };
+		1804A0001ECBEC030059A7B5 /* EraserBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserBrush.swift; sourceTree = "<group>"; };
+		1804A0021ECBF7700059A7B5 /* pictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureViewController.swift; sourceTree = "<group>"; };
 		18A453A31EC9D83F00F9FC9A /* createViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				18A453A31EC9D83F00F9FC9A /* createViewController.swift */,
 				18A453A51EC9DE7900F9FC9A /* board.swift */,
 				18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */,
+				18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */,
+				1804A0001ECBEC030059A7B5 /* EraserBrush.swift */,
+				1804A0021ECBF7700059A7B5 /* pictureViewController.swift */,
 			);
 			path = notebook;
 			sourceTree = "<group>";
@@ -145,11 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */,
+				1804A0031ECBF7700059A7B5 /* pictureViewController.swift in Sources */,
 				18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */,
 				18F8488A1EB20B7A000CBA6C /* ViewController.swift in Sources */,
 				18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */,
 				18A453A61EC9DE7900F9FC9A /* board.swift in Sources */,
 				18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */,
+				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
