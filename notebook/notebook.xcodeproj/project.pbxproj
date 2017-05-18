@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */; };
 		1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804A0001ECBEC030059A7B5 /* EraserBrush.swift */; };
-		1804A0031ECBF7700059A7B5 /* pictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804A0021ECBF7700059A7B5 /* pictureViewController.swift */; };
 		18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A31EC9D83F00F9FC9A /* createViewController.swift */; };
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
@@ -18,12 +17,14 @@
 		18F8488D1EB20B7A000CBA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F8488B1EB20B7A000CBA6C /* Main.storyboard */; };
 		18F8488F1EB20B7A000CBA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F8488E1EB20B7A000CBA6C /* Assets.xcassets */; };
 		18F848921EB20B7A000CBA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F848901EB20B7A000CBA6C /* LaunchScreen.storyboard */; };
+		18FFDDCA1ECD3BE700EFF146 /* fileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDDC91ECD3BE700EFF146 /* fileCell.swift */; };
+		18FFDDCC1ECD452D00EFF146 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDDCB1ECD452D00EFF146 /* File.swift */; };
+		18FFDDCE1ECD48BF00EFF146 /* pictureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFDDCD1ECD48BF00EFF146 /* pictureTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilBrush.swift; sourceTree = "<group>"; };
 		1804A0001ECBEC030059A7B5 /* EraserBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserBrush.swift; sourceTree = "<group>"; };
-		1804A0021ECBF7700059A7B5 /* pictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureViewController.swift; sourceTree = "<group>"; };
 		18A453A31EC9D83F00F9FC9A /* createViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
@@ -34,6 +35,9 @@
 		18F8488E1EB20B7A000CBA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F848911EB20B7A000CBA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F848931EB20B7A000CBA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FFDDC91ECD3BE700EFF146 /* fileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileCell.swift; sourceTree = "<group>"; };
+		18FFDDCB1ECD452D00EFF146 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		18FFDDCD1ECD48BF00EFF146 /* pictureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +70,46 @@
 		18F848861EB20B7A000CBA6C /* notebook */ = {
 			isa = PBXGroup;
 			children = (
-				18F848871EB20B7A000CBA6C /* AppDelegate.swift */,
-				18F848891EB20B7A000CBA6C /* ViewController.swift */,
-				18F8488B1EB20B7A000CBA6C /* Main.storyboard */,
+				18FFDDD11ECD4EDB00EFF146 /* mainframe */,
+				18FFDDD01ECD4EC100EFF146 /* picture */,
+				18FFDDCF1ECD4E8D00EFF146 /* draw */,
 				18F8488E1EB20B7A000CBA6C /* Assets.xcassets */,
+				18F8488B1EB20B7A000CBA6C /* Main.storyboard */,
 				18F848901EB20B7A000CBA6C /* LaunchScreen.storyboard */,
 				18F848931EB20B7A000CBA6C /* Info.plist */,
-				18A453A31EC9D83F00F9FC9A /* createViewController.swift */,
-				18A453A51EC9DE7900F9FC9A /* board.swift */,
-				18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */,
-				18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */,
-				1804A0001ECBEC030059A7B5 /* EraserBrush.swift */,
-				1804A0021ECBF7700059A7B5 /* pictureViewController.swift */,
 			);
 			path = notebook;
+			sourceTree = "<group>";
+		};
+		18FFDDCF1ECD4E8D00EFF146 /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				18A453A31EC9D83F00F9FC9A /* createViewController.swift */,
+				18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */,
+				18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */,
+				18A453A51EC9DE7900F9FC9A /* board.swift */,
+				1804A0001ECBEC030059A7B5 /* EraserBrush.swift */,
+			);
+			name = draw;
+			sourceTree = "<group>";
+		};
+		18FFDDD01ECD4EC100EFF146 /* picture */ = {
+			isa = PBXGroup;
+			children = (
+				18FFDDCB1ECD452D00EFF146 /* File.swift */,
+				18FFDDC91ECD3BE700EFF146 /* fileCell.swift */,
+				18FFDDCD1ECD48BF00EFF146 /* pictureTableViewController.swift */,
+			);
+			name = picture;
+			sourceTree = "<group>";
+		};
+		18FFDDD11ECD4EDB00EFF146 /* mainframe */ = {
+			isa = PBXGroup;
+			children = (
+				18F848871EB20B7A000CBA6C /* AppDelegate.swift */,
+				18F848891EB20B7A000CBA6C /* ViewController.swift */,
+			);
+			name = mainframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */,
-				1804A0031ECBF7700059A7B5 /* pictureViewController.swift in Sources */,
 				18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */,
 				18F8488A1EB20B7A000CBA6C /* ViewController.swift in Sources */,
 				18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */,
+				18FFDDCC1ECD452D00EFF146 /* File.swift in Sources */,
+				18FFDDCA1ECD3BE700EFF146 /* fileCell.swift in Sources */,
+				18FFDDCE1ECD48BF00EFF146 /* pictureTableViewController.swift in Sources */,
 				18A453A61EC9DE7900F9FC9A /* board.swift in Sources */,
 				18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */,
 				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
