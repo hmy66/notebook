@@ -67,6 +67,21 @@ class board: UIImageView{
         self.drawingImage()
         }
     }
+    //Mark:获取当前board上的图片
+    func takeImage() -> UIImage {
+        UIGraphicsBeginImageContext(self.bounds.size)
+        
+        self.backgroundColor?.setFill()
+        UIRectFill(self.bounds)
+        
+        self.image?.draw(in: self.bounds)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image!
+    }
+    
     
     // MARK:drawing
     func drawingImage() {

@@ -97,6 +97,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9v-o1-gXA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <state key="normal" title="查看手账"/>
+                                        <connections>
+                                            <segue destination="iuZ-RN-xaO" kind="presentation" id="KG8-Za-xyw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a49-OP-G6g">
                                         <rect key="frame" x="0.0" y="40" width="343" height="30"/>
@@ -164,6 +167,74 @@
             </objects>
             <point key="canvasLocation" x="-412" y="166.8665667166417"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UKN-aH-Q8P">
+            <objects>
+                <navigationController id="iuZ-RN-xaO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K5a-Xv-qUC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fur-my-fak" kind="relationship" relationship="rootViewController" id="GSI-eC-GTJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9g-fl-PFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2169" y="938"/>
+        </scene>
+        <!--我的手账-->
+        <scene sceneID="D68-EY-X5w">
+            <objects>
+                <collectionViewController id="fur-my-fak" customClass="ManageCollectionViewController" customModule="notebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="v2H-EK-wbC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jDx-E6-UOj">
+                            <size key="itemSize" width="189" height="191"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ni" id="5T9-Ks-2z4" customClass="noteCell" customModule="notebook" customModuleProvider="target">
+                                <rect key="frame" x="93" y="0.0" width="189" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="189" height="191"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="03r-Lu-0o0">
+                                            <rect key="frame" x="20" y="0.0" width="149" height="130"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-Ho-tq6">
+                                            <rect key="frame" x="20" y="150" width="150" height="41"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="Date" destination="5Fu-Ho-tq6" id="UnG-WH-RLZ"/>
+                                    <outlet property="noteImage" destination="03r-Lu-0o0" id="led-tI-yP7"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="fur-my-fak" id="Qqj-w0-fUB"/>
+                            <outlet property="delegate" destination="fur-my-fak" id="bVp-my-eSa"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="我的手账" id="6IR-pm-gKj"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozk-bw-lft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1271.2" y="944.97751124437787"/>
+        </scene>
         <!--Create View Controller-->
         <scene sceneID="7Jq-AU-OO1">
             <objects>
@@ -187,6 +258,7 @@
                                     <segment title="文本框"/>
                                     <segment title="画笔"/>
                                     <segment title="橡皮"/>
+                                    <segment title="保存"/>
                                 </segments>
                                 <connections>
                                     <action selector="switchBrush:" destination="FHL-Vz-93T" eventType="valueChanged" id="tOD-hH-mrS"/>
@@ -195,7 +267,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Leh-Kl-pTn">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="PiX-eg-5Un"/>
+                                    <barButtonItem title="画笔设置" id="PiX-eg-5Un"/>
                                 </items>
                             </toolbar>
                         </subviews>

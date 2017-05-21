@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */; };
 		1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804A0001ECBEC030059A7B5 /* EraserBrush.swift */; };
+		180C344C1ED1A28200F52A78 /* RGBColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C344B1ED1A28200F52A78 /* RGBColorPicker.swift */; };
+		180C344F1ED1A84100F52A78 /* PaintingBrushSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C344D1ED1A84100F52A78 /* PaintingBrushSettingsView.swift */; };
+		180C34501ED1A84100F52A78 /* PaintingBrushSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180C344E1ED1A84100F52A78 /* PaintingBrushSettingsView.xib */; };
+		180C34571ED1C05700F52A78 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34561ED1C05700F52A78 /* Global.swift */; };
+		180C345B1ED1C51100F52A78 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C345A1ED1C51100F52A78 /* Notes.swift */; };
+		180C34611ED1D51300F52A78 /* ManageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */; };
+		180C34631ED1D95D00F52A78 /* noteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34621ED1D95D00F52A78 /* noteCell.swift */; };
 		18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A31EC9D83F00F9FC9A /* createViewController.swift */; };
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
@@ -27,6 +34,13 @@
 /* Begin PBXFileReference section */
 		18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilBrush.swift; sourceTree = "<group>"; };
 		1804A0001ECBEC030059A7B5 /* EraserBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserBrush.swift; sourceTree = "<group>"; };
+		180C344B1ED1A28200F52A78 /* RGBColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColorPicker.swift; sourceTree = "<group>"; };
+		180C344D1ED1A84100F52A78 /* PaintingBrushSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingBrushSettingsView.swift; sourceTree = "<group>"; };
+		180C344E1ED1A84100F52A78 /* PaintingBrushSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaintingBrushSettingsView.xib; sourceTree = "<group>"; };
+		180C34561ED1C05700F52A78 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		180C345A1ED1C51100F52A78 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageCollectionViewController.swift; sourceTree = "<group>"; };
+		180C34621ED1D95D00F52A78 /* noteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noteCell.swift; sourceTree = "<group>"; };
 		18A453A31EC9D83F00F9FC9A /* createViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
@@ -55,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180C34511ED1BA7200F52A78 /* management */ = {
+			isa = PBXGroup;
+			children = (
+				180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */,
+				180C34621ED1D95D00F52A78 /* noteCell.swift */,
+			);
+			name = management;
+			sourceTree = "<group>";
+		};
 		18F8487B1EB20B7A000CBA6C = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +97,7 @@
 		18F848861EB20B7A000CBA6C /* notebook */ = {
 			isa = PBXGroup;
 			children = (
+				180C34511ED1BA7200F52A78 /* management */,
 				18FFDDD11ECD4EDB00EFF146 /* mainframe */,
 				18FFDDD01ECD4EC100EFF146 /* picture */,
 				18FFDDCF1ECD4E8D00EFF146 /* draw */,
@@ -94,6 +118,9 @@
 				18A453A51EC9DE7900F9FC9A /* board.swift */,
 				1804A0001ECBEC030059A7B5 /* EraserBrush.swift */,
 				18C021D61ECDDF530046A0AF /* textBrush.swift */,
+				180C344B1ED1A28200F52A78 /* RGBColorPicker.swift */,
+				180C344D1ED1A84100F52A78 /* PaintingBrushSettingsView.swift */,
+				180C344E1ED1A84100F52A78 /* PaintingBrushSettingsView.xib */,
 			);
 			name = draw;
 			sourceTree = "<group>";
@@ -114,6 +141,8 @@
 			children = (
 				18F848871EB20B7A000CBA6C /* AppDelegate.swift */,
 				18F848891EB20B7A000CBA6C /* ViewController.swift */,
+				180C34561ED1C05700F52A78 /* Global.swift */,
+				180C345A1ED1C51100F52A78 /* Notes.swift */,
 			);
 			name = mainframe;
 			sourceTree = "<group>";
@@ -177,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180C34501ED1A84100F52A78 /* PaintingBrushSettingsView.xib in Resources */,
 				18F848921EB20B7A000CBA6C /* LaunchScreen.storyboard in Resources */,
 				18F8488F1EB20B7A000CBA6C /* Assets.xcassets in Resources */,
 				18F8488D1EB20B7A000CBA6C /* Main.storyboard in Resources */,
@@ -190,15 +220,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180C344F1ED1A84100F52A78 /* PaintingBrushSettingsView.swift in Sources */,
 				1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */,
 				18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */,
 				18F8488A1EB20B7A000CBA6C /* ViewController.swift in Sources */,
 				18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */,
+				180C34631ED1D95D00F52A78 /* noteCell.swift in Sources */,
 				18FFDDCC1ECD452D00EFF146 /* File.swift in Sources */,
 				18FFDDCA1ECD3BE700EFF146 /* fileCell.swift in Sources */,
+				180C34571ED1C05700F52A78 /* Global.swift in Sources */,
 				18FFDDCE1ECD48BF00EFF146 /* pictureTableViewController.swift in Sources */,
+				180C34611ED1D51300F52A78 /* ManageCollectionViewController.swift in Sources */,
 				18A453A61EC9DE7900F9FC9A /* board.swift in Sources */,
 				18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */,
+				180C345B1ED1C51100F52A78 /* Notes.swift in Sources */,
+				180C344C1ED1A28200F52A78 /* RGBColorPicker.swift in Sources */,
 				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
 				18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */,
 				18C021D71ECDDF530046A0AF /* textBrush.swift in Sources */,
