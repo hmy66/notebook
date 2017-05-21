@@ -11,17 +11,19 @@ import UIKit
 class fileCell: UITableViewCell {
 
     @IBOutlet weak var fileIcon: UIImageView!
-    @IBOutlet weak var fileName: UILabel!
+    @IBOutlet weak var fileName: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        //cell最左边的箭头
+        //cell最边的箭头
         self.accessoryType=UITableViewCellAccessoryType.disclosureIndicator
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
-           }
+       print("selected")
+        
+    }
     
 }

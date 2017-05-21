@@ -110,5 +110,5 @@ class board: UIImageView{
             brush.lastPoint = brush.endPoint
         }
     }
-
+    
 }

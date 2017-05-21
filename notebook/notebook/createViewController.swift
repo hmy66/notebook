@@ -40,8 +40,16 @@ class createViewController: UIViewController {
     //Mark:pencil好像关联在返回上
     @IBAction func switchBrush(_ sender:UISegmentedControl) {
         assert(sender.tag < self.brushes.count, "!!!")
-        
-        self.DrawingBoard.brush = self.brushes[sender.selectedSegmentIndex-3]
+        switch segmentedControl.selectedSegmentIndex{
+        case 0:break
+        case 1:break
+        case 2:break
+           // let textField=UITextField(CGRect(origin: CGPoint(x:10,y:10), size: CGSize(width: 100, height: 100)))
+            //self.view.addSubview(UITextView)
+        case 3:self.DrawingBoard.brush=self.brushes[0]
+        case 4:self.DrawingBoard.brush=self.brushes[1]
+        default:break
+        }
 
     }
 }

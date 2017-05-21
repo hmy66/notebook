@@ -12,10 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    //var collectionView=pictureTableViewController()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //let mainSB=UIStoryboard(name:"Main",bundle:nil)
+        //self.collectionView=mainSB.instantiateViewController(withIdentifier: "showPicture") as! pictureTableViewController
         return true
     }
 

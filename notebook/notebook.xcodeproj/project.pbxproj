@@ -12,6 +12,8 @@
 		18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A31EC9D83F00F9FC9A /* createViewController.swift */; };
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
+		18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */; };
+		18C021D71ECDDF530046A0AF /* textBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D61ECDDF530046A0AF /* textBrush.swift */; };
 		18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F848871EB20B7A000CBA6C /* AppDelegate.swift */; };
 		18F8488A1EB20B7A000CBA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F848891EB20B7A000CBA6C /* ViewController.swift */; };
 		18F8488D1EB20B7A000CBA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F8488B1EB20B7A000CBA6C /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		18A453A31EC9D83F00F9FC9A /* createViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
+		18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureCollectionViewController.swift; sourceTree = "<group>"; };
+		18C021D61ECDDF530046A0AF /* textBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textBrush.swift; sourceTree = "<group>"; };
 		18F848841EB20B7A000CBA6C /* notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F848871EB20B7A000CBA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F848891EB20B7A000CBA6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 				18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */,
 				18A453A51EC9DE7900F9FC9A /* board.swift */,
 				1804A0001ECBEC030059A7B5 /* EraserBrush.swift */,
+				18C021D61ECDDF530046A0AF /* textBrush.swift */,
 			);
 			name = draw;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				18FFDDCB1ECD452D00EFF146 /* File.swift */,
 				18FFDDC91ECD3BE700EFF146 /* fileCell.swift */,
 				18FFDDCD1ECD48BF00EFF146 /* pictureTableViewController.swift */,
+				18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */,
 			);
 			name = picture;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 				18A453A61EC9DE7900F9FC9A /* board.swift in Sources */,
 				18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */,
 				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
+				18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */,
+				18C021D71ECDDF530046A0AF /* textBrush.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
