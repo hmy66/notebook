@@ -21,6 +21,8 @@
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
 		18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */; };
 		18C021D71ECDDF530046A0AF /* textBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D61ECDDF530046A0AF /* textBrush.swift */; };
+		18DAEB291EE432360015DF9B /* userinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEB281EE432360015DF9B /* userinfo.swift */; };
+		18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEB2A1EE433800015DF9B /* signViewController.swift */; };
 		18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F848871EB20B7A000CBA6C /* AppDelegate.swift */; };
 		18F8488A1EB20B7A000CBA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F848891EB20B7A000CBA6C /* ViewController.swift */; };
 		18F8488D1EB20B7A000CBA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F8488B1EB20B7A000CBA6C /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
 		18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureCollectionViewController.swift; sourceTree = "<group>"; };
 		18C021D61ECDDF530046A0AF /* textBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textBrush.swift; sourceTree = "<group>"; };
+		18DAEB281EE432360015DF9B /* userinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userinfo.swift; sourceTree = "<group>"; };
+		18DAEB2A1EE433800015DF9B /* signViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signViewController.swift; sourceTree = "<group>"; };
 		18F848841EB20B7A000CBA6C /* notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F848871EB20B7A000CBA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F848891EB20B7A000CBA6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 			name = management;
 			sourceTree = "<group>";
 		};
+		18DAEB271EE4320C0015DF9B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				18DAEB281EE432360015DF9B /* userinfo.swift */,
+				18DAEB2A1EE433800015DF9B /* signViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		18F8487B1EB20B7A000CBA6C = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		18F848861EB20B7A000CBA6C /* notebook */ = {
 			isa = PBXGroup;
 			children = (
+				18DAEB271EE4320C0015DF9B /* login */,
 				180C34511ED1BA7200F52A78 /* management */,
 				18FFDDD11ECD4EDB00EFF146 /* mainframe */,
 				18FFDDD01ECD4EC100EFF146 /* picture */,
@@ -227,6 +241,7 @@
 				18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */,
 				180C34631ED1D95D00F52A78 /* noteCell.swift in Sources */,
 				18FFDDCC1ECD452D00EFF146 /* File.swift in Sources */,
+				18DAEB291EE432360015DF9B /* userinfo.swift in Sources */,
 				18FFDDCA1ECD3BE700EFF146 /* fileCell.swift in Sources */,
 				180C34571ED1C05700F52A78 /* Global.swift in Sources */,
 				18FFDDCE1ECD48BF00EFF146 /* pictureTableViewController.swift in Sources */,
@@ -234,6 +249,7 @@
 				18A453A61EC9DE7900F9FC9A /* board.swift in Sources */,
 				18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */,
 				180C345B1ED1C51100F52A78 /* Notes.swift in Sources */,
+				18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */,
 				180C344C1ED1A28200F52A78 /* RGBColorPicker.swift in Sources */,
 				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
 				18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */,
