@@ -16,6 +16,9 @@
 		180C345B1ED1C51100F52A78 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C345A1ED1C51100F52A78 /* Notes.swift */; };
 		180C34611ED1D51300F52A78 /* ManageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */; };
 		180C34631ED1D95D00F52A78 /* noteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34621ED1D95D00F52A78 /* noteCell.swift */; };
+		1876E9141EE43CD200A9270C /* fileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E9131EE43CD200A9270C /* fileTableViewCell.swift */; };
+		1876E9161EE43D9C00A9270C /* manageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E9151EE43D9C00A9270C /* manageTableViewController.swift */; };
+		1876E91B1EE44CF300A9270C /* notesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E91A1EE44CF300A9270C /* notesViewController.swift */; };
 		18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A31EC9D83F00F9FC9A /* createViewController.swift */; };
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
@@ -43,6 +46,9 @@
 		180C345A1ED1C51100F52A78 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageCollectionViewController.swift; sourceTree = "<group>"; };
 		180C34621ED1D95D00F52A78 /* noteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noteCell.swift; sourceTree = "<group>"; };
+		1876E9131EE43CD200A9270C /* fileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileTableViewCell.swift; sourceTree = "<group>"; };
+		1876E9151EE43D9C00A9270C /* manageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageTableViewController.swift; sourceTree = "<group>"; };
+		1876E91A1EE44CF300A9270C /* notesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notesViewController.swift; sourceTree = "<group>"; };
 		18A453A31EC9D83F00F9FC9A /* createViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 			children = (
 				180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */,
 				180C34621ED1D95D00F52A78 /* noteCell.swift */,
+				1876E9131EE43CD200A9270C /* fileTableViewCell.swift */,
+				1876E9151EE43D9C00A9270C /* manageTableViewController.swift */,
+				1876E91A1EE44CF300A9270C /* notesViewController.swift */,
 			);
 			name = management;
 			sourceTree = "<group>";
@@ -236,10 +245,12 @@
 			files = (
 				180C344F1ED1A84100F52A78 /* PaintingBrushSettingsView.swift in Sources */,
 				1804A0011ECBEC030059A7B5 /* EraserBrush.swift in Sources */,
+				1876E9161EE43D9C00A9270C /* manageTableViewController.swift in Sources */,
 				18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */,
 				18F8488A1EB20B7A000CBA6C /* ViewController.swift in Sources */,
 				18A453A41EC9D83F00F9FC9A /* createViewController.swift in Sources */,
 				180C34631ED1D95D00F52A78 /* noteCell.swift in Sources */,
+				1876E9141EE43CD200A9270C /* fileTableViewCell.swift in Sources */,
 				18FFDDCC1ECD452D00EFF146 /* File.swift in Sources */,
 				18DAEB291EE432360015DF9B /* userinfo.swift in Sources */,
 				18FFDDCA1ECD3BE700EFF146 /* fileCell.swift in Sources */,
@@ -248,6 +259,7 @@
 				180C34611ED1D51300F52A78 /* ManageCollectionViewController.swift in Sources */,
 				18A453A61EC9DE7900F9FC9A /* board.swift in Sources */,
 				18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */,
+				1876E91B1EE44CF300A9270C /* notesViewController.swift in Sources */,
 				180C345B1ED1C51100F52A78 /* Notes.swift in Sources */,
 				18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */,
 				180C344C1ED1A28200F52A78 /* RGBColorPicker.swift in Sources */,
