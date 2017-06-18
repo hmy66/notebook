@@ -16,6 +16,7 @@
 		180C345B1ED1C51100F52A78 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C345A1ED1C51100F52A78 /* Notes.swift */; };
 		180C34611ED1D51300F52A78 /* ManageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */; };
 		180C34631ED1D95D00F52A78 /* noteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C34621ED1D95D00F52A78 /* noteCell.swift */; };
+		181DA48B1EF61D4800EE8A2B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DA48A1EF61D4800EE8A2B /* loginViewController.swift */; };
 		1876E9141EE43CD200A9270C /* fileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E9131EE43CD200A9270C /* fileTableViewCell.swift */; };
 		1876E9161EE43D9C00A9270C /* manageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E9151EE43D9C00A9270C /* manageTableViewController.swift */; };
 		1876E91B1EE44CF300A9270C /* notesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876E91A1EE44CF300A9270C /* notesViewController.swift */; };
@@ -23,7 +24,6 @@
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
 		18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */; };
-		18C021D71ECDDF530046A0AF /* textBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D61ECDDF530046A0AF /* textBrush.swift */; };
 		18DAEB291EE432360015DF9B /* userinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEB281EE432360015DF9B /* userinfo.swift */; };
 		18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEB2A1EE433800015DF9B /* signViewController.swift */; };
 		18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F848871EB20B7A000CBA6C /* AppDelegate.swift */; };
@@ -46,6 +46,7 @@
 		180C345A1ED1C51100F52A78 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		180C34601ED1D51300F52A78 /* ManageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageCollectionViewController.swift; sourceTree = "<group>"; };
 		180C34621ED1D95D00F52A78 /* noteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noteCell.swift; sourceTree = "<group>"; };
+		181DA48A1EF61D4800EE8A2B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		1876E9131EE43CD200A9270C /* fileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileTableViewCell.swift; sourceTree = "<group>"; };
 		1876E9151EE43D9C00A9270C /* manageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageTableViewController.swift; sourceTree = "<group>"; };
 		1876E91A1EE44CF300A9270C /* notesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notesViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +54,7 @@
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
 		18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureCollectionViewController.swift; sourceTree = "<group>"; };
-		18C021D61ECDDF530046A0AF /* textBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textBrush.swift; sourceTree = "<group>"; };
-		18DAEB281EE432360015DF9B /* userinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userinfo.swift; sourceTree = "<group>"; };
+		18DAEB281EE432360015DF9B /* userinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = userinfo.swift; sourceTree = "<group>"; };
 		18DAEB2A1EE433800015DF9B /* signViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signViewController.swift; sourceTree = "<group>"; };
 		18F848841EB20B7A000CBA6C /* notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F848871EB20B7A000CBA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +96,7 @@
 			children = (
 				18DAEB281EE432360015DF9B /* userinfo.swift */,
 				18DAEB2A1EE433800015DF9B /* signViewController.swift */,
+				181DA48A1EF61D4800EE8A2B /* loginViewController.swift */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -140,7 +141,6 @@
 				18049FE01ECBDAA50059A7B5 /* PencilBrush.swift */,
 				18A453A51EC9DE7900F9FC9A /* board.swift */,
 				1804A0001ECBEC030059A7B5 /* EraserBrush.swift */,
-				18C021D61ECDDF530046A0AF /* textBrush.swift */,
 				180C344B1ED1A28200F52A78 /* RGBColorPicker.swift */,
 				180C344D1ED1A84100F52A78 /* PaintingBrushSettingsView.swift */,
 				180C344E1ED1A84100F52A78 /* PaintingBrushSettingsView.xib */,
@@ -263,9 +263,9 @@
 				180C345B1ED1C51100F52A78 /* Notes.swift in Sources */,
 				18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */,
 				180C344C1ED1A28200F52A78 /* RGBColorPicker.swift in Sources */,
+				181DA48B1EF61D4800EE8A2B /* loginViewController.swift in Sources */,
 				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
 				18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */,
-				18C021D71ECDDF530046A0AF /* textBrush.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

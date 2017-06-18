@@ -10,14 +10,17 @@ import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
+    var receivedstr:String=""
     @IBOutlet weak var Portrait: UIImageView!
-    @IBOutlet weak var userName: UITextField!
+  
+    @IBOutlet weak var userName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let page=UIView()
         page.backgroundColor=UIColor.blue
+        userName.text=receivedstr
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,5 +59,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func logout(_ sender: UIButton) {
+         dismiss(animated: true, completion: nil)
+    }
   }
 

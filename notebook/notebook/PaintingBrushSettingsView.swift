@@ -34,9 +34,17 @@ class PaintingBrushSettingsView: UIView {
         self.strokeWidthSlider.addTarget(self, action: Selector(("strokeWidthChanged:")), for: .valueChanged)
     }
     
-    func setBackgroundColor(color: UIColor) {
+    /*func setBackgroundColor(color: UIColor) {
         self.strokeColorPreview.backgroundColor = color
         self.colorPicker.setCurrentColor(color: color)
+    }*/
+    override var backgroundColor: UIColor?
+    {
+        didSet {
+            self.strokeColorPreview.backgroundColor = self.backgroundColor
+            self.colorPicker.setCurrentColor(color: self.backgroundColor!)
+            super.backgroundColor = oldValue
+        }
     }
     
     func strokeWidthChanged(slider: UISlider) {

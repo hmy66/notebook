@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import os.log
 
-class signViewController: UIViewController {
+class signViewController: UIViewController{
 
-    var lists=[user]()
+    var newuser:user?
     @IBOutlet weak var navibar: UINavigationBar!
     @IBOutlet weak var backbutton: UIBarButtonItem!
     
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -27,16 +29,26 @@ class signViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    //Mark:signup
-    @IBAction func signup(_ sender: UIButton) {
-        var newuser=user(username:username.text!,password:password.text!)
-        lists.append(newuser)
-        UIAlertView(title:nil, message: "注册成功", delegate: nil, cancelButtonTitle: "确定").show()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let button = sender as? UIButton, button === saveButton else {
+            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            return
+        }
+        newuser=user(username: username.text!, password: password.text!)
     }
+    
+    //Mark:signup
+    /*@IBAction func signup(_ sender: UIButton) {
+        //var newuser=user(username:username.text!,password:password.text!)
+        //lists.append(newuser)
+        UIAlertView(title:nil, message: "注册成功", delegate: nil, cancelButtonTitle: "确定").show()
+    }*/
     //Mark:cancel signup
     @IBAction func cancel(_ sender: UIButton) {
-     username.text="用户名"
-     password.text="密码"
+     username.text="username"
+     password.text="password"
     }
    
     @IBAction func exit(_ sender: UIBarButtonItem) {

@@ -7,6 +7,7 @@
 //
 
 import CoreGraphics
+import UIKit
 
 protocol PaintBrush {
     func supportedContinuousDrawing() -> Bool;
@@ -19,7 +20,6 @@ class BaseBrush: NSObject,PaintBrush {
     var lastPoint: CGPoint?
     
     var strokeWidth: CGFloat!
-    
     //表示是否是连续不断的绘图
     func supportedContinuousDrawing() -> Bool {
         return false
@@ -29,4 +29,5 @@ class BaseBrush: NSObject,PaintBrush {
     func drawInContext(context: CGContext) {
         assert(false, "must implements in subclass.")
     }
+    
 }

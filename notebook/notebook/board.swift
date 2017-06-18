@@ -16,6 +16,7 @@ class board: UIImageView{
     var brush:BaseBrush?
     private var realImage:UIImage?
     //Mark:init
+    var textPoint:CGPoint=CGPoint(x: 0, y: 0)
     var strokeWidth: CGFloat
     var strokeColor: UIColor
     override init(image:UIImage!) {
@@ -37,6 +38,7 @@ class board: UIImageView{
             
             let touch = ((touches as NSSet).anyObject() as AnyObject)
             brush.beginPoint=touch.location(in:self)
+            textPoint=touch.location(in:self)
             brush.endPoint = brush.beginPoint
             
             self.drawingState = .Began
@@ -71,8 +73,8 @@ class board: UIImageView{
     func takeImage() -> UIImage {
         UIGraphicsBeginImageContext(self.bounds.size)
         
-        self.backgroundColor?.setFill()
-        UIRectFill(self.bounds)
+        //self.backgroundColor?.setFill()
+        //UIRectFill(self.bounds)
         
         self.image?.draw(in: self.bounds)
         
@@ -82,6 +84,12 @@ class board: UIImageView{
         return image!
     }
     
+    func drawText(text:NSString)
+    {
+        print(textPoint.x)
+        let font=UIFont.boldSystemFont(ofSize: 12)
+        text.draw(at: textPoint, withAttributes: [NSFontAttributeName:font,NSForegroundColorAttributeName:UIColor.black.cgColor] )
+    }
     
     // MARK:drawing
     func drawingImage() {
