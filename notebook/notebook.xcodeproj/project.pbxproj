@@ -24,6 +24,10 @@
 		18A453A61EC9DE7900F9FC9A /* board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A51EC9DE7900F9FC9A /* board.swift */; };
 		18A453A81EC9E4A400F9FC9A /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */; };
 		18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */; };
+		18C8F08A1EF7E8280019B3B8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F0891EF7E8280019B3B8 /* Note.swift */; };
+		18C8F08C1EF7ED310019B3B8 /* noteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F08B1EF7ED310019B3B8 /* noteTableViewCell.swift */; };
+		18C8F08E1EF7EED10019B3B8 /* viewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F08D1EF7EED10019B3B8 /* viewTableViewController.swift */; };
+		18C8F0901EF7F2260019B3B8 /* DetailNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F08F1EF7F2260019B3B8 /* DetailNote.swift */; };
 		18DAEB291EE432360015DF9B /* userinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEB281EE432360015DF9B /* userinfo.swift */; };
 		18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEB2A1EE433800015DF9B /* signViewController.swift */; };
 		18F848881EB20B7A000CBA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F848871EB20B7A000CBA6C /* AppDelegate.swift */; };
@@ -54,6 +58,10 @@
 		18A453A51EC9DE7900F9FC9A /* board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = board.swift; sourceTree = "<group>"; };
 		18A453A71EC9E4A400F9FC9A /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
 		18C021D41ECD91BE0046A0AF /* pictureCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureCollectionViewController.swift; sourceTree = "<group>"; };
+		18C8F0891EF7E8280019B3B8 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		18C8F08B1EF7ED310019B3B8 /* noteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noteTableViewCell.swift; sourceTree = "<group>"; };
+		18C8F08D1EF7EED10019B3B8 /* viewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewTableViewController.swift; sourceTree = "<group>"; };
+		18C8F08F1EF7F2260019B3B8 /* DetailNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNote.swift; sourceTree = "<group>"; };
 		18DAEB281EE432360015DF9B /* userinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = userinfo.swift; sourceTree = "<group>"; };
 		18DAEB2A1EE433800015DF9B /* signViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signViewController.swift; sourceTree = "<group>"; };
 		18F848841EB20B7A000CBA6C /* notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +99,17 @@
 			name = management;
 			sourceTree = "<group>";
 		};
+		18C8F0881EF7E7F80019B3B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18C8F0891EF7E8280019B3B8 /* Note.swift */,
+				18C8F08B1EF7ED310019B3B8 /* noteTableViewCell.swift */,
+				18C8F08D1EF7EED10019B3B8 /* viewTableViewController.swift */,
+				18C8F08F1EF7F2260019B3B8 /* DetailNote.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		18DAEB271EE4320C0015DF9B /* login */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +139,7 @@
 		18F848861EB20B7A000CBA6C /* notebook */ = {
 			isa = PBXGroup;
 			children = (
+				18C8F0881EF7E7F80019B3B8 /* view */,
 				18DAEB271EE4320C0015DF9B /* login */,
 				180C34511ED1BA7200F52A78 /* management */,
 				18FFDDD11ECD4EDB00EFF146 /* mainframe */,
@@ -253,7 +273,9 @@
 				1876E9141EE43CD200A9270C /* fileTableViewCell.swift in Sources */,
 				18FFDDCC1ECD452D00EFF146 /* File.swift in Sources */,
 				18DAEB291EE432360015DF9B /* userinfo.swift in Sources */,
+				18C8F08E1EF7EED10019B3B8 /* viewTableViewController.swift in Sources */,
 				18FFDDCA1ECD3BE700EFF146 /* fileCell.swift in Sources */,
+				18C8F08A1EF7E8280019B3B8 /* Note.swift in Sources */,
 				180C34571ED1C05700F52A78 /* Global.swift in Sources */,
 				18FFDDCE1ECD48BF00EFF146 /* pictureTableViewController.swift in Sources */,
 				180C34611ED1D51300F52A78 /* ManageCollectionViewController.swift in Sources */,
@@ -262,7 +284,9 @@
 				1876E91B1EE44CF300A9270C /* notesViewController.swift in Sources */,
 				180C345B1ED1C51100F52A78 /* Notes.swift in Sources */,
 				18DAEB2B1EE433800015DF9B /* signViewController.swift in Sources */,
+				18C8F08C1EF7ED310019B3B8 /* noteTableViewCell.swift in Sources */,
 				180C344C1ED1A28200F52A78 /* RGBColorPicker.swift in Sources */,
+				18C8F0901EF7F2260019B3B8 /* DetailNote.swift in Sources */,
 				181DA48B1EF61D4800EE8A2B /* loginViewController.swift in Sources */,
 				18049FE11ECBDAA50059A7B5 /* PencilBrush.swift in Sources */,
 				18C021D51ECD91BE0046A0AF /* pictureCollectionViewController.swift in Sources */,

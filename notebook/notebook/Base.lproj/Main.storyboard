@@ -103,6 +103,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9v-o1-gXA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <state key="normal" title="查看手账"/>
+                                        <connections>
+                                            <segue destination="vEN-6O-33P" kind="presentation" id="Dux-rJ-RWm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a49-OP-G6g">
                                         <rect key="frame" x="0.0" y="40" width="343" height="30"/>
@@ -323,7 +326,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-374" y="1835"/>
+            <point key="canvasLocation" x="-972" y="1807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gaG-zM-5ea">
@@ -390,6 +393,124 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L09-P1-1q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1009" y="197"/>
+        </scene>
+        <!--Detail Note-->
+        <scene sceneID="qcF-c1-gao">
+            <objects>
+                <viewController id="vwM-bf-d4O" customClass="DetailNote" customModule="notebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7RZ-Y7-xHC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SAO-Ll-yHI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xHO-sh-rur" customClass="D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-RT-szY">
+                                <rect key="frame" x="136" y="646" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtw-1w-qxN">
+                                <rect key="frame" x="16" y="64" width="343" height="582"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6Ua-RF-vvl" appends="YES" id="9sQ-Oc-X0l"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rtw-1w-qxN" firstAttribute="top" secondItem="7RZ-Y7-xHC" secondAttribute="bottom" id="2x6-mV-UGx"/>
+                            <constraint firstItem="DcR-RT-szY" firstAttribute="top" secondItem="rtw-1w-qxN" secondAttribute="bottom" id="99z-dC-Qhc"/>
+                            <constraint firstItem="DcR-RT-szY" firstAttribute="leading" secondItem="xHO-sh-rur" secondAttribute="leadingMargin" constant="120" id="Uy8-wp-sMB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DcR-RT-szY" secondAttribute="trailing" constant="120" id="VnF-Qf-WxR"/>
+                            <constraint firstItem="rtw-1w-qxN" firstAttribute="leading" secondItem="xHO-sh-rur" secondAttribute="leadingMargin" id="dRX-5F-pXh"/>
+                            <constraint firstItem="SAO-Ll-yHI" firstAttribute="top" secondItem="DcR-RT-szY" secondAttribute="bottom" id="exe-Jk-l5A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rtw-1w-qxN" secondAttribute="trailing" id="oIY-iM-mD6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="month" destination="DcR-RT-szY" id="XmL-4C-oA0"/>
+                        <outlet property="noteImage" destination="rtw-1w-qxN" id="Pzc-0X-Sa3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYB-gZ-izp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Ua-RF-vvl">
+                    <connections>
+                        <action selector="changepicture:" destination="vwM-bf-d4O" id="wLs-MT-iDb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2768.8000000000002" y="-552.77361319340332"/>
+        </scene>
+        <!--查看手账-->
+        <scene sceneID="Lpu-KG-A7g">
+            <objects>
+                <tableViewController id="yTZ-22-J9s" customClass="viewTableViewController" customModule="notebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" id="hui-gg-oF4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellidentifier" rowHeight="127" id="roU-Hr-3Dk" customClass="noteTableViewCell" customModule="notebook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="roU-Hr-3Dk" id="kBr-9p-SHl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="126.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9TV-WG-xKd">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="126.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U70-Nt-bFW">
+                                            <rect key="frame" x="179" y="40" width="106" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9TV-WG-xKd" firstAttribute="leading" secondItem="kBr-9p-SHl" secondAttribute="leading" id="DRq-jT-eQw"/>
+                                        <constraint firstAttribute="bottom" secondItem="9TV-WG-xKd" secondAttribute="bottom" id="NIU-jh-alv"/>
+                                        <constraint firstItem="9TV-WG-xKd" firstAttribute="top" secondItem="kBr-9p-SHl" secondAttribute="top" id="fB1-tF-QWD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fileIcon" destination="9TV-WG-xKd" id="wE2-hf-VZl"/>
+                                    <outlet property="time" destination="U70-Nt-bFW" id="mxy-1Z-H0T"/>
+                                    <segue destination="vwM-bf-d4O" kind="show" identifier="NoteDetail" id="PfV-jy-St8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yTZ-22-J9s" id="nIj-VC-Vhe"/>
+                            <outlet property="delegate" destination="yTZ-22-J9s" id="CZL-JP-ghK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="查看手账" id="cPU-an-LKW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odW-qk-nC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="-552.77361319340332"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ra2-FF-Loq">
+            <objects>
+                <navigationController id="vEN-6O-33P" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pU2-5u-Dnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yTZ-22-J9s" kind="relationship" relationship="rootViewController" id="AKw-KN-dgW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYi-lP-L8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="-551"/>
         </scene>
         <!--Sign View Controller-->
         <scene sceneID="Ptu-Xr-LTr">
@@ -550,7 +671,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1041" y="938"/>
+            <point key="canvasLocation" x="-121" y="1742"/>
         </scene>
         <!--sucaierjiye-->
         <scene sceneID="GpI-70-L1c">
@@ -567,7 +688,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9n-Sf-frl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="1619"/>
+            <point key="canvasLocation" x="692" y="1742"/>
         </scene>
         <!--素材二级页-->
         <scene sceneID="Oks-ME-DA5">
@@ -613,7 +734,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ah7-ex-oZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798" y="1619"/>
+            <point key="canvasLocation" x="1410" y="1781"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="joZ-uu-1VJ">
@@ -629,7 +750,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lA1-dj-Y58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="938"/>
+            <point key="canvasLocation" x="-639" y="1039"/>
         </scene>
     </scenes>
     <resources>
