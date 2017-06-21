@@ -16,19 +16,29 @@ class board: UIImageView{
     var brush:BaseBrush?
     private var realImage:UIImage?
     //Mark:init
-    var textPoint:CGPoint=CGPoint(x: 0, y: 0)
+    //var textPoint:CGPoint=CGPoint(x: 0, y: 0)
     var strokeWidth: CGFloat
     var strokeColor: UIColor
+    //let textlabel=UILabel(frame: CGRect(x: 100, y: 20, width: 100, height: 100))
+    
     override init(image:UIImage!) {
+        //self.backgroundColor=UIColor.white
         self.strokeColor = UIColor.black
         self.strokeWidth = 1
         super.init(image:image)
+        print("in init")
+        self.backgroundColor=UIColor.white
+        //self.textlabel.text="today is here"
+        //self.textlabel.backgroundColor=UIColor.blue
+        //self.addSubview(textlabel)
     }
     
     required init?(coder : NSCoder) {
+        //self.backgroundColor=UIColor.white
         self.strokeColor = UIColor.black
         self.strokeWidth = 1
         super.init(coder:coder)
+        self.backgroundColor=UIColor.white
     }
     
     //Mark:touches method
@@ -38,7 +48,7 @@ class board: UIImageView{
             
             let touch = ((touches as NSSet).anyObject() as AnyObject)
             brush.beginPoint=touch.location(in:self)
-            textPoint=touch.location(in:self)
+            //textPoint=touch.location(in:self)
             brush.endPoint = brush.beginPoint
             
             self.drawingState = .Began
@@ -84,12 +94,15 @@ class board: UIImageView{
         return image!
     }
     
-    func drawText(text:NSString)
+    /*func drawText(text:String)
     {
-        print(textPoint.x)
-        let font=UIFont.boldSystemFont(ofSize: 12)
-        text.draw(at: textPoint, withAttributes: [NSFontAttributeName:font,NSForegroundColorAttributeName:UIColor.black.cgColor] )
-    }
+        //print(textPoint.x)
+        //let font=UIFont.boldSystemFont(ofSize: 12)
+        //text.draw(at: textPoint, withAttributes: [NSFontAttributeName:font,NSForegroundColorAttributeName:UIColor.black.cgColor] )
+        let textlabel=UILabel(frame: CGRect(x: 20, y: 20, width: 100, height: 100))
+        textlabel.text=text
+        self.addSubview(textlabel)
+    }*/
     
     // MARK:drawing
     func drawingImage() {

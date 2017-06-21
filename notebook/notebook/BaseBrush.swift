@@ -30,4 +30,10 @@ class BaseBrush: NSObject,PaintBrush {
         assert(false, "must implements in subclass.")
     }
     
+    /*func place()->UITextField{
+        let textfield=UITextField(frame: CGRect(x:beginPoint.x, y:beginPoint.y, width: 100, height: 100))
+        return textfield
+    }*/
+
+    
 }

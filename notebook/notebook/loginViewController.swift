@@ -89,7 +89,7 @@ class loginViewController: UIViewController{
         if isSuccessfulSave {
             os_log("Users successfully saved.", log: OSLog.default, type: .debug)
         } else {
-            os_log("Failed to save meals...", log: OSLog.default, type: .error)
+            os_log("Failed to save users...", log: OSLog.default, type: .error)
         }
     }
     

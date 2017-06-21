@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class viewTableViewController: UITableViewController {
 
@@ -78,6 +79,9 @@ class viewTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func goback(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -123,5 +127,21 @@ class viewTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    //Mark:Note的归档和解档
+    /*private func savenotes()
+    {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(lists, toFile: user.ArchiveURL.path)
+        if isSuccessfulSave {
+            os_log("notes successfully saved.", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Failed to save notes...", log: OSLog.default, type: .error)
+        }
+    }
+    
+    private func loadUsers()->[user]?
+    {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Note.ArchiveURL.path) as? [user]
+    }*/
+    
 
 }

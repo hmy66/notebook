@@ -139,12 +139,12 @@
 		18F848861EB20B7A000CBA6C /* notebook */ = {
 			isa = PBXGroup;
 			children = (
+				18FFDDCF1ECD4E8D00EFF146 /* draw */,
 				18C8F0881EF7E7F80019B3B8 /* view */,
+				18FFDDD11ECD4EDB00EFF146 /* mainframe */,
 				18DAEB271EE4320C0015DF9B /* login */,
 				180C34511ED1BA7200F52A78 /* management */,
-				18FFDDD11ECD4EDB00EFF146 /* mainframe */,
 				18FFDDD01ECD4EC100EFF146 /* picture */,
-				18FFDDCF1ECD4E8D00EFF146 /* draw */,
 				18F8488E1EB20B7A000CBA6C /* Assets.xcassets */,
 				18F8488B1EB20B7A000CBA6C /* Main.storyboard */,
 				18F848901EB20B7A000CBA6C /* LaunchScreen.storyboard */,
