@@ -29,6 +29,7 @@ class createViewController: UIViewController,UIImagePickerControllerDelegate,UIN
     @IBOutlet weak var DrawingBoard: board!
     var lastScale:CGFloat=1
     var flag:Int=1
+    var tmpImage:UIImage?
     //var image:UIImage=#imageLiteral(resourceName: "defaultNote")
     let imageview=UIImageView(frame:CGRect(x: 250, y: 250, width: 100, height: 100))
     //抬头文字
@@ -194,6 +195,7 @@ class createViewController: UIViewController,UIImagePickerControllerDelegate,UIN
         Btnrubber.backgroundColor=UIColor.clear
         Btntext.backgroundColor=UIColor.clear
         BtnPicture.backgroundColor=UIColor.clear
+        tmpImage=self.DrawingBoard.takeImage()
         UIAlertView(title:nil, message: "保存成功！", delegate: nil, cancelButtonTitle: "确定").show()
     }
     

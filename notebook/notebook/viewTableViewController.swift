@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class viewTableViewController: UITableViewController {
+class viewTableViewController: UITableViewController,UINavigationControllerDelegate{
 
     //1到12月的手账
     var jan=[Note]()
@@ -24,10 +24,14 @@ class viewTableViewController: UITableViewController {
     var oct=[Note]()
     var nov=[Note]()
     var dec=[Note]()
+    var tmpNote:Note?
+    var teststr:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.rowHeight=80
+        print(teststr)
+        //june.append(tmpNote!)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,8 +46,12 @@ class viewTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func putnav()
+    {
+        let nav=UINavigationController(rootViewController: self)
+    }
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -60,6 +68,10 @@ class viewTableViewController: UITableViewController {
             if let secondView=segue.destination as? DetailNote{
                 let month=self.tableView.indexPathForSelectedRow!.row
                 let tmp="\(month+1)月"
+                if(month==5)
+                {
+                    secondView.notes.append(tmpNote!)
+                }
                 secondView.receivedstr=tmp
             }
         }

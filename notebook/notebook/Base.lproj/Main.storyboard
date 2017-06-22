@@ -104,7 +104,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <state key="normal" title="查看手账"/>
                                         <connections>
-                                            <segue destination="vEN-6O-33P" kind="presentation" id="Dux-rJ-RWm"/>
+                                            <action selector="viewNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aiv-JI-3Cs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a49-OP-G6g">
@@ -156,6 +156,7 @@
                     <connections>
                         <outlet property="Portrait" destination="9Jd-We-K9p" id="oxy-qa-ANy"/>
                         <outlet property="userName" destination="6I2-cx-kLW" id="Xrz-3n-iUv"/>
+                        <segue destination="vEN-6O-33P" kind="presentation" identifier="view" id="LL5-0B-bRL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -374,6 +375,7 @@
                                         <state key="normal" title="保存"/>
                                         <connections>
                                             <action selector="ActSave:" destination="FHL-Vz-93T" eventType="touchUpInside" id="tYO-CX-j6p"/>
+                                            <segue destination="UAq-s3-rP0" kind="unwind" unwindAction="unwindFromDrawingBoardWithSender:" id="1et-ef-Nbn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-YY-9gV">
@@ -429,6 +431,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L09-P1-1q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UAq-s3-rP0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1041" y="221"/>
         </scene>

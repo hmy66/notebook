@@ -15,8 +15,7 @@ import os.log
 class loginViewController: UIViewController{
 
     var lists=[user]()
-   
-    
+    var tmpnote=Note()
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var passWord: UITextField!
     
@@ -82,6 +81,8 @@ class loginViewController: UIViewController{
             //saveUsers()
         }
     }
+    
+
    //Mark:user的归档和解档
     private func saveUsers()
     {

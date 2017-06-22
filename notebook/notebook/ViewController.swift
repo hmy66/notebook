@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
     var receivedstr:String=""
+    var tmpnote=Note()
+    var flag:Int=0
     @IBOutlet weak var Portrait: UIImageView!
   
     @IBOutlet weak var userName: UILabel!
@@ -27,7 +29,12 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    /*func getnote() -> Note {
+        return tmpnote
+    }
+    func getstring() -> String {
+        return "test string"
+    }*/
     //Mark:change Portrait
     @IBAction func changePortrait(_ sender: UITapGestureRecognizer) {
         // Hide the keyboard.
@@ -62,5 +69,32 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
     @IBAction func logout(_ sender: UIButton) {
          dismiss(animated: true, completion: nil)
     }
-  }
+    
+    @IBAction func unwindFromDrawingBoard(sender:UIStoryboardSegue)
+    {
+        if let sourceViewController = sender.source as? createViewController, let tmp = sourceViewController.tmpImage {
+            tmpnote=Note(note: tmp)
+            //saveUsers()
+            flag=1
+            print("unwind success")
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier=="view"
+        {
+            print("here")
+            if let secondView=segue.destination.childViewControllers[0] as? viewTableViewController{
+                print("segue to view table view")
+                //let tmp:String=self.userName.text!
+                secondView.tmpNote=tmpnote
+                secondView.teststr="test string"
+            }
+        }
+    }
+    
+    @IBAction func viewNote(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "view", sender: self)
+    }
+}
 
